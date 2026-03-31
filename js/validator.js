@@ -2,7 +2,10 @@ const formulario = document.getElementById("formulario");
 const cuerpotabla = document.getElementById("cuerpotabla");
 const campoBusqueda = document.getElementById("campoBusqueda");
 
+<<<<<<< HEAD
 let idEdicion = null;
+=======
+>>>>>>> fbd32344e87abaea0966ae7df24da4301d6f0b56
 formulario.addEventListener(
     "submit",function(event){
         event.preventDefault();
@@ -10,7 +13,11 @@ formulario.addEventListener(
         const titulo = document.getElementById("titulo").value.trim();
         const nombre = document.getElementById("nombre").value.trim();
         const año = document.getElementById("año").value.trim();
+<<<<<<< HEAD
         const Genero = document.getElementById("Genero").value.trim();
+=======
+        const genero = document.getElementById("genero").value.trim();
+>>>>>>> fbd32344e87abaea0966ae7df24da4301d6f0b56
 
         // Elementos de error
         const errorTitulo = document.getElementById("errorTitulo");
@@ -42,7 +49,11 @@ formulario.addEventListener(
             errorAño.textContent = "";
         }
 
+<<<<<<< HEAD
         if(Genero === ""){
+=======
+        if(genero === ""){
+>>>>>>> fbd32344e87abaea0966ae7df24da4301d6f0b56
             errorGenero.textContent = "El genero es obligatorio";
             valido = false;
         }else{
