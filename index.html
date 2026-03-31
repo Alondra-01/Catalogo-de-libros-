@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de libros</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+   <header>
+    <h1>Catálogo de libros</h1>
+    <p>En esta biblioteca puedes agregar tus libros leidos y los que estas por leer</p>
+   </header>
+
+   <nav></nav> 
+
+   <main>
+    <section>
+        <h2>Registro de libros</h2>
+        <form action="javascript:void(0);" method="post" id="formulario">
+            <label for="titulo">Título del libro:</label>
+            <input type="text" id="titulo" name="titulo" placeholder="Ingresa el titulo del libro" class="caja">
+            <span id="errorTitulo" class="error"></span>
+
+            <br><br>
+            <label for="nombre">Autor:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre del autor">
+            <span id="errorNombre" class="error"></span>
+
+            <br><br>
+            <label for="año">Año de publicación:</label>
+            <input type="number" id="año" name="año" min="1000" max="2026" placeholder="Ingresa el año de publicación">
+            <span id="errorAño" class="error"></span>
+
+            <br><br>
+            <label for="Genero">Género:</label>
+            <select name="Genero" id="Genero">
+                <option value="">Selecciona una opción</option>
+                <option value="ficcion">Ficción</option>
+                <option value="cienciaf"> Ciencia Ficción</option>
+                <option value="misterio">Misterio</option>
+                <option value="aventura">Aventura</option>
+                <option value="biografía">Biografía</option>
+                <option value="hitorico">Histórico</option>
+            </select>
+            <span id="errorGenero" class="error"></span>
+            <br><br>
+            <button type="submit" class="btn-agregar">Agregar libro</button>
+        </form>
+    </section>
+
+        <br><br>
+
+        <h3>Libros registrados</h3>
+        <div id="busquedaTitulo">
+            <h4>Buscar por Titulo</h4>
+            <input type="text" id="busqueda" class="busqueda" placeholder="Buscar por titulo">
+            <button id="btnBuscar" class="btnBuscar">Buscar</button>
+
+        </div>
+        <div>
+        <h4>Filtrar por Género</h4>
+            <select id="filtroGenero">
+                <option value="">Selecciona</option>
+                <option value="ficcion">Ficción</option>
+                <option value="cienciaf">Ciencia Ficción</option>
+                <option value="misterio">Misterio</option>
+                <option value="aventura">Aventura</option>
+                <option value="biografía">Biografía</option>
+                <option value="hitorico">Histórico</option>
+            </select>
+            <button id="btnFiltrar" class="btnBuscar">Filtrar</button>
+            </div>
+
+
+        <table id="tablaLibros" class="tabla" border="1">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Autor</th>
+                    <th>Año</th>
+                    <th>Género</th>
+                </tr>
+            </thead>
+            <tbody id="cuerpotabla"></tbody>
+        </table>
+        
+
+   </main>
+
+   <footer></footer> 
+   <script src="js/validator.js"></script>
+</body>
+</html>

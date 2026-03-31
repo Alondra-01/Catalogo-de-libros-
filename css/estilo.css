@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 5px;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #dab49d;
+    color: #5e3023;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #895737;
+    color: #f3e9dc;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+main {
+    display: flexbox;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
+    font-size: 1.2rem;
+}
+
+.btn-agregar{
+    background: #895737;
+    color: #f3e9dc;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+    width: 25%;
+}
+
+.btn-agregar:hover {
+    background: #5e3023;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+input{
+    color: black;
+    font-size: 15px;
+}
+
+select{
+    color: black;
+    font-size: 15px;
+}
+
+.btnBuscar{
+    background: #895737;
+    color: #f3e9dc;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
